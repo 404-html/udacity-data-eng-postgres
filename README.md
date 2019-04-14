@@ -58,24 +58,28 @@ We will use a star schema optimized for queries on song analyses. The fact table
 - `session_id`
 - `location`
 - `user_agent`
+
 The first dimension table `users` consists of:
 - `user_id` (primary key)
 - `first_name`
 - `last_name`
 - `gender`
 - `level`
+
 The second dimension table `songs` consists of:
 - `song_id` (primary key)
 - `title`
 - `artist_id`
 - `year`
 - `duration`
+
 The third dimension table `artists` consists of:
 - `artist_id` (primary key)
 - `name`
 - `location`
 - `latitude`
 - `longitude`
+
 The fourth dimension table `time` consists of:
 - `start_time` (primary key)
 - `hour`
